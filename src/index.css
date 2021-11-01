@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{box-sizing: border-box;}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:70px;
+  background-image: linear-gradient(to right, pink, rgb(226, 226, 128));
+  width:40vw;
+  height:95vh;
+  margin:0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+input{
+  border:none;
+  color:midnightblue;
+  text-align: center;
+  font-size:50px;
+  outline:none;
+  width:30vw;
+  margin: 50px auto;
+  padding:20px;
+  border-radius: 10px;
+  
+  box-shadow: 0px 5px 0 rgba(151, 116, 116, 0.2);
+}
+::placeholder{
+  color:lightsteelblue;
+}
+
+.table_data{
+  border: 1px solid black;
+  background-color: antiquewhite;
+  padding:2px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  margin:auto;
+}
+
+
+th {
+  background-color: brown;
+  padding:20px 40px ;
+  width:100px;
+  color: aliceblue;
+  border-radius: 4px;
+  box-shadow:inset 0 0 30px red;
+}
+
+
+td{
+  background-color:darkgoldenrod;
+  padding: 20px;
+  width:200px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px yellow;
+  color: aliceblue;
 }
